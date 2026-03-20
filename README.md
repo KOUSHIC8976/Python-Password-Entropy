@@ -1,12 +1,50 @@
-# Python-Password-Entropy
-Python Password Entropy is a standalone, command-line utility designed to enforce modern cryptographic policy standards across development and operations environments. Built on core Python security libraries (secrets, hashlib), it moves beyond obsolete, rules-based password validation to provide mathematically verifiable security metrics. It is a tool for SecOps teams, developers, and auditors who require strength and integrity of their application keys, cryptographic keys, and user credentials.
+<div align="center">
+  
+# 🔐 Python Password Entropy
+**A Cryptographic CLI Utility for Verifiable Credential Security & Breach Detection**
 
-The utility addresses the two vulnerabilities in credential management: predictable entropy and known compromises, offering a singular solution to achieve compliance with modern security benchmarks like NIST SP 800-63B.
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Security](https://img.shields.io/badge/Security-NIST_SP_800--63B-success.svg)]()
+[![Core Libs](https://img.shields.io/badge/Dependencies-Zero-purple.svg)]()
+[![CLI Tool](https://img.shields.io/badge/Interface-CLI-darkgray.svg)]()
 
-Usage:
 
-python app.py audit "Password"
 
-python app.py audit "Password" --breach
+</div>
 
+## 📖 Overview
+**Python Password Entropy** is a standalone, enterprise-grade command-line utility designed to enforce modern cryptographic policy standards across development and operations environments. 
+
+Moving beyond obsolete, arbitrary rules-based validation (e.g., "must contain one special character"), this tool calculates **mathematically verifiable security metrics**. It is built specifically for SecOps teams, backend developers, and security auditors who require absolute assurance regarding the strength and integrity of their application keys and user credentials.
+
+## ✨ Key Engineering Features
+
+* 🧮 **Mathematical Entropy Calculation:** Calculates true cryptographic entropy (Shannon entropy) based on character pool size and length, neutralizing predictable generation patterns.
+* 🛡️ **NIST SP 800-63B Compliance:** Aligns with modern National Institute of Standards and Technology (NIST) digital identity guidelines, favoring credential length and complexity over frustrating character-composition rules.
+* 🚨 **Secure Compromise Detection:** Features a `--breach` flag to actively audit credentials against known data breaches without exposing the plaintext password (utilizing secure cryptographic hashing).
+* 📦 **Zero Supply-Chain Risk:** Built entirely on Python's core security libraries (`secrets`, `hashlib`). By eliminating external dependencies, it removes the risk of third-party package vulnerabilities.
+
+---
+
+## 🛠️ Technology Stack
+
+| Component | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Core Logic** | Python 3 | High-performance script execution |
+| **Cryptography** | `hashlib` | Secure, one-way hashing for breach verification |
+| **Randomization** | `secrets` | Cryptographically strong random number generation (CSPRNG) |
+| **Interface** | CLI | Headless execution for CI/CD pipelines and server environments |
+
+---
+
+## 🚀 Getting Started
+
+Because this utility relies strictly on Python's standard library, there are **zero external packages to install**.
+
+```bash
+# 1. Clone the repository
+git clone [https://github.com/YourUsername/Python-Password-Entropy.git](https://github.com/YourUsername/Python-Password-Entropy.git)
+cd Python-Password-Entropy
+
+# 2. Run the tool immediately
 python app.py -h
