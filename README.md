@@ -43,7 +43,7 @@ Because this utility relies strictly on Python's standard library, there are **z
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/YourUsername/Python-Password-Entropy.git](https://github.com/YourUsername/Python-Password-Entropy.git)
+git clone 
 cd Python-Password-Entropy
 
 # 2. Run the tool immediately
