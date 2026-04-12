@@ -13,7 +13,7 @@
 </div>
 
 ##  Overview
-**Python Password Entropy** is a standalone, enterprise-grade command-line utility designed to enforce modern cryptographic policy standards across development and operations environments. 
+**Python Password Entropy** is a standalone, command-line utility designed to enforce modern cryptographic policy standards across development and operations environments. 
 
 Moving beyond obsolete, arbitrary rules-based validation (e.g., "must contain one special character"), this tool calculates **mathematically verifiable security metrics**. It is built specifically for SecOps teams, backend developers, and security auditors who require absolute assurance regarding the strength and integrity of their application keys and user credentials.
 
